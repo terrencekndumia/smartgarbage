@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:#f3f6f4;color:#1d2b24}
+header{display:flex;justify-content:space-between;align-items:center;background:#1f7a4d;color:#fff;padding:12px 20px}
+header h1{font-size:1.1rem;margin:0}
+main{max-width:1000px;margin:20px auto;padding:0 14px}
+.card{background:#fff;border-radius:10px;padding:16px;margin-bottom:16px;box-shadow:0 1px 4px #0001}
+h2{margin-top:0;font-size:1.05rem}
+input,select,button{font:inherit;padding:8px 10px;border-radius:6px;border:1px solid #bbb}
+button{background:#1f7a4d;color:#fff;border:0;cursor:pointer}
+button.alt{background:#555}button.warn{background:#c0392b}
+form.row{display:flex;flex-wrap:wrap;gap:8px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:8px;border-bottom:1px solid #e5e5e5;vertical-align:middle}
+.bar{background:#e3e8e5;border-radius:6px;height:14px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle}
+.bar i{display:block;height:100%;background:#2ecc71}.bar i.full{background:#e74c3c}
+.tag{padding:2px 8px;border-radius:10px;font-size:.8rem;color:#fff;background:#2ecc71}
+.tag.red{background:#e74c3c}.tag.amber{background:#e69b00}.tag.grey{background:#888}
+.err{color:#c0392b;margin:6px 0}
+#login{max-width:340px;margin:60px auto}#login input{width:100%;margin-bottom:10px}
+.actions button,.actions input{margin:2px}
+form.inline{display:inline}
+.btn{display:inline-block;padding:6px 10px;border-radius:6px;background:#555;color:#fff;text-decoration:none;font-size:.85rem;margin-left:8px}
+.note{background:#e8f5ee}
