@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "smart-garbage",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultra", "top": -110, "left": 230, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo", "top": 20, "left": 290, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir", "top": 150, "left": 250, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "ultra:VCC", "esp:VIN", "red", [ "v0" ] ],
+    [ "ultra:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "ultra:TRIG", "esp:D5", "green", [ "v0" ] ],
+    [ "ultra:ECHO", "esp:D18", "blue", [ "v0" ] ],
+    [ "servo:V+", "esp:VIN", "red", [ "h0" ] ],
+    [ "servo:GND", "esp:GND.1", "black", [ "h0" ] ],
+    [ "servo:PWM", "esp:D13", "orange", [ "h0" ] ],
+    [ "pir:VCC", "esp:VIN", "red", [ "v0" ] ],
+    [ "pir:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pir:OUT", "esp:D27", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
